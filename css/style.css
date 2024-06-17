@@ -17,6 +17,7 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: black;
 }
 
 
@@ -29,3 +30,8 @@ html {
     scroll-behavior: smooth;
 }
 /* end global rules */
+/* Start Sidebar */
+.sidebar ul li i {
+    font-size: 21px;
+}
+/* End Sidebar */

@@ -116,6 +116,9 @@
 .mt-25 {
     margin-top: 25px;
 }
+.mt-30 {
+    margin-top: 30px;
+}
 .mb-5 {
     margin-bottom: 5px;
 }
@@ -203,6 +206,12 @@
 }
 .txt-right {
     text-align: right;
+}
+.fs-10 {
+    font-size: 10px;
+}
+.fs-12 {
+    font-size: 12px;
 }
 .fs-13 {
     font-size: 13px;
