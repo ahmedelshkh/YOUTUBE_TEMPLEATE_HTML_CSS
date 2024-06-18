@@ -1,6 +1,7 @@
 /* start global rules */
 :root {
     --font-awesome: "Font Awesome 6 Free";
+    --hover-sidebar: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -33,5 +34,14 @@ html {
 /* Start Sidebar */
 .sidebar ul li i {
     font-size: 21px;
+}
+.sidebar ul li {
+    border-radius: 8px;
+    transition: .3s;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background-color: var(--hover-sidebar);
 }
 /* End Sidebar */
