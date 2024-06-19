@@ -40,6 +40,9 @@ html {
 .sidebar ul li i {
     font-size: 21px;
 }
+.sidebar ul li i:first-of-type {
+    margin-top: 12px;
+}
 .sidebar ul li {
     border-radius: 8px;
     transition: .3s;
@@ -53,6 +56,20 @@ html {
 /* Start Top Section In Header */
 header .top .logo {
     margin-top: 10px;
+}
+header .top .logo span {
+    font-weight: 500;
+    letter-spacing: -.120cap;
+}
+header .top .logo span::before {
+    content: 'EG';
+    position: absolute;
+    top: -3px;
+    font-weight: 300;
+    right: -16px;
+    color: #ccc;
+    font-size: 10px;
+    letter-spacing: normal;
 }
 header .top .search .search-box {
     padding: 10px;
