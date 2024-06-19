@@ -37,17 +37,28 @@ html {
 }
 /* end global rules */
 /* Start Sidebar */
+.sidebar {
+    width: 80px;
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .sidebar ul li i {
     font-size: 21px;
 }
-.sidebar ul li i:first-of-type {
+.sidebar ul li:first-of-type {
     margin-top: 12px;
+    width: fit-content;
+    padding: 10px;
 }
 .sidebar ul li {
     border-radius: 8px;
     transition: .3s;
     padding: 10px;
     cursor: pointer;
+    width: 100%;
 }
 .sidebar ul li:hover {
     background-color: var(--hover-sidebar);
