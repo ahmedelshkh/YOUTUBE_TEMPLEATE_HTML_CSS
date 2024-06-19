@@ -7,6 +7,9 @@
     --main-color: white;
     --border-b: hsl(0, 0%, 18.82%);
     --back-b: rgba(255, 255, 255, 0.1);
+    --back-tags: rgba(255, 255, 255, 0.1);
+    --black-color: black;
+    --hover-tags-icons: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -23,7 +26,7 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: black;
+    background-color: var(--black-color);
 }
 
 
@@ -139,7 +142,7 @@ header .top .search .voice-icon {
     transition: .3s;
 }
 header .top .search .voice-icon:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--hover-tags-icons);
 }
 header .top .info .icon {
     color: white;
@@ -176,3 +179,62 @@ header .top .info .sign-in span {
     }
 }
 /* End Top Section In Header */
+/* Start Tags Section */
+.tags .holder {
+    overflow-X: auto;
+    position: relative;
+    padding-right: 20px;
+}
+/* .tags .holder::before {
+    box-shadow: inset -20px 6px 20px 9px var(--black-color);
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 109%;
+    border-radius: 50%;
+    z-index: 5;
+    top: -2px;
+    right: -9px;
+
+} */
+.tags .holder::-webkit-scrollbar {
+    display: none;
+}
+.tags .holder div {
+    flex-wrap: nowrap;
+}
+.tags .holder div span  {
+    color: var(--main-color);
+    background-color: var(--back-tags);
+    padding: 7px 11px;
+    border: 1px solid var(--border-b);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.tags .holder div span:hover {
+    background-color: var(--hover-tags-icons);
+}
+.tags .holder div span.selected {
+    background-color: var(--main-color);
+    color: var(--black-color);
+}
+.tags button {
+    color: var(--main-color);
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.tags button:hover {
+    background-color: var(--hover-tags-icons);
+}
+/* End Tags Section */
