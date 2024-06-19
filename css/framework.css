@@ -302,7 +302,6 @@
 .between-flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .flex-center {
     display: flex;
@@ -318,3 +317,8 @@
     border-radius: 10px;
 }
 /* End Componants */
+/* Start Other Properties */
+.hide {
+    display: none;
+}
+/* End Other Properties */

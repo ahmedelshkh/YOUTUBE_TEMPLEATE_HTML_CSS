@@ -51,19 +51,22 @@
     <!-- Start Header -->
     <header class="w-full mt-10">
         <div class="top between-flex">
-            <div class="logo">
-                <i class="fa-brands fa-youtube c-red"></i>
-                <span class="c-white fw-bold">YouTube</span>
+            <div class="logo d-flex align-center h-fit">
+                <i class="fa-brands fa-youtube c-red fs-25 mr-5"></i>
+                <span class="c-white fw-bold fs-25">YouTube</span>
             </div>
-            <div class="search">
-                <input type="search" placeholder="Search" id="search">
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-youtube"></i>
+            <div class="search d-flex">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass hide"></i>
+                    <input type="search" placeholder="Search" id="search">
+                </div>
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <i class="fa-solid fa-microphone voice-icon"></i>
             </div>
-            <div class="info">
-                <i></i>
-                <div class="sign-in btn-shape b-eee">
-                    <i></i>
+            <div class="info d-flex align-center">
+                <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                <div class="sign-in d-flex align-center">
+                    <i class="fa-regular fa-circle-user"></i>
                     <span class="hide-mobile">Sign In</span>
                 </div>
             </div>

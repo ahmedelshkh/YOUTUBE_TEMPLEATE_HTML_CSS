@@ -5,6 +5,8 @@
     --blue-: #3ea6ff;
     --alt-blue: #263850;
     --main-color: white;
+    --border-b: hsl(0, 0%, 18.82%);
+    --back-b: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -48,3 +50,86 @@ html {
     background-color: var(--hover-sidebar);
 }
 /* End Sidebar */
+/* Start Top Section In Header */
+header .top .logo {
+    margin-top: 10px;
+}
+header .top .search .search-box {
+    padding: 10px;
+    border: 1px solid var(--border-b);
+    border-radius: 40px 0 0 40px; ;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+}
+header .top .search .search-box i {
+    color: var(--main-color);
+    margin-right: 10px;
+    padding: 0 5px;
+    transition: .3s;
+}
+header .top .search .search-box:focus-within {
+    border-color: var(--blue-);
+}
+header .top .search .search-box:focus-within i {
+    display: inline-block;
+} 
+header .top .search .search-box input {
+    background-color: transparent;
+    border:none;
+    outline: none;
+    width: 300px;
+    color: var(--main-color);
+}
+header .top .search .search-icon {
+    color: var(--main-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-b);
+    border-left: none;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    background-color: var(--back-b);
+}
+header .top .search .voice-icon {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    border-radius: 50%;
+    padding: 15px;
+    background-color: var(--back-b);
+    cursor: pointer;
+    transition: .3s;
+}
+header .top .search .voice-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+header .top .info .icon {
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+header .top .info .sign-in {
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid var(--border-b);
+    cursor: pointer;
+}
+header .top .info .sign-in:hover {
+    background-color: var(--alt-blue);
+    border-color: transparent;
+}
+header .top .info .sign-in i {
+    color: var(--blue-);
+    margin-right: 7px;
+    font-size: 20px;
+}
+header .top .info .sign-in span {
+    color: var(--blue-);
+    font-size: 14px;
+}
+/* End Top Section In Header */
