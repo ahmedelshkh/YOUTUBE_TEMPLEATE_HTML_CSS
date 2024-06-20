@@ -180,6 +180,15 @@ header .top .info .sign-in span {
 }
 /* End Top Section In Header */
 /* Start Tags Section */
+header {
+    height: fit-content;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    header {
+        width: calc(100% - 80px);
+    }
+}
 .tags .holder {
     overflow-X: auto;
     position: relative;
@@ -233,6 +242,8 @@ header .top .info .sign-in span {
     justify-self: center;
     align-items: center;
     border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
 }
 .tags button:hover {
     background-color: var(--hover-tags-icons);
