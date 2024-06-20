@@ -181,12 +181,14 @@ header .top .info .sign-in span {
 }
 /* End Top Section In Header */
 /* Start Tags Section */
-header {
-    height: fit-content;
+.body-content {
     width: 100%;
 }
+header {
+    height: fit-content;
+}
 @media (min-width: 768px) {
-    header {
+    .body-content{
         width: calc(100% - 80px);
     }
 }
@@ -254,6 +256,22 @@ header {
 /* Start Main Sidebar */
 .main-sidebar {
     width: 250px;
+    position: absolute;
+    background-color: var(--black-color);
+    top: 0;
+    left: -500px;
+    transition: .3s;
+    z-index: 100;
+}
+.sidebar ul .sidebar-menu:hover ~ .sidebars .main-sidebar {
+    left: 0;
+}
+.main-sidebar .head {
+    margin-top: 20px;
+}
+.main-sidebar .head .logo .menu-bar {
+    margin-left: 31px;
+    font-size: 20px;
 }
 .main-sidebar ul {
     padding: 10px;
@@ -265,6 +283,8 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: .3s;
+    display: flex;
+    align-items: center;
 }
 .main-sidebar ul li.active {
     background-color: var(--back-tags);
@@ -278,12 +298,15 @@ header {
 }
 .main-sidebar ul li span {
     color: var(--main-color);
-    font-weight: bold;
+    font-weight: 500;
 }
 .main-sidebar ul h3 {
     color: var(--main-color);
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: 500;
+}
+.main-sidebar ul li img {
+    width: 25px;
 }
 /* End Main Sidebar */
