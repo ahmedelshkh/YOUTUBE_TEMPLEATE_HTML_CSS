@@ -10,6 +10,7 @@
     --back-tags: rgba(255, 255, 255, 0.1);
     --black-color: black;
     --hover-tags-icons: rgba(255, 255, 255, 0.2);
+    --main-sidebar-border-line-color: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -247,5 +248,42 @@ header {
 }
 .tags button:hover {
     background-color: var(--hover-tags-icons);
+    
 }
 /* End Tags Section */
+/* Start Main Sidebar */
+.main-sidebar {
+    width: 250px;
+}
+.main-sidebar ul {
+    padding: 10px;
+    border-bottom: 1px solid var(--main-sidebar-border-line-color);
+}
+.main-sidebar ul li {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.main-sidebar ul li.active {
+    background-color: var(--back-tags);
+}
+.main-sidebar ul li:hover {
+    background-color: var(--hover-tags-icons);
+}
+.main-sidebar ul li i {
+    color: var(--main-color);
+    font-size: 18px;
+}
+.main-sidebar ul li span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.main-sidebar ul h3 {
+    color: var(--main-color);
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* End Main Sidebar */
