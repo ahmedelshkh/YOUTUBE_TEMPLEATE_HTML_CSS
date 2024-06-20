@@ -262,6 +262,8 @@ header {
     left: -500px;
     transition: .3s;
     z-index: 100;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 .sidebar ul .sidebar-menu:hover ~ .sidebars .main-sidebar {
     left: 0;
