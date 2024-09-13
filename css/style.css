@@ -11,6 +11,7 @@
     --black-color: black;
     --hover-tags-icons: rgba(255, 255, 255, 0.2);
     --main-sidebar-border-line-color: rgba(255, 255, 255, 0.2);
+    --scroll-bar-thumb-color: grey;
 }
 
 * {
@@ -265,15 +266,28 @@ header {
     max-height: 100vh;
     overflow-y: auto;
 }
-.sidebar ul .sidebar-menu:hover ~ .sidebars .main-sidebar {
-    left: 0;
+.main-sidebar::-webkit-scrollbar {
+    width: 7px;
+}
+.main-sidebar::-webkit-scrollbar-track {
+    background-color: var(--black-color);
+}
+.main-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-thumb-color);
 }
 .main-sidebar .head {
     margin-top: 20px;
 }
 .main-sidebar .head .logo .menu-bar {
-    margin-left: 31px;
+    margin-left: 11px;
+    padding: 10px;
+    border-radius: 4px;
     font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+.main-sidebar .head .logo .menu-bar:hover {
+    background-color: var(--hover-sidebar);
 }
 .main-sidebar ul {
     padding: 10px;
